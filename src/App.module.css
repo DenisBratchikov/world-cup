@@ -1,0 +1,15 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 12px 24px;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 12px;
+}
+
+.button {
+  width: 167px;
+}

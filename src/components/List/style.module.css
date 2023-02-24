@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.list {
+  list-style-type: none;
+  margin: 8px 0;
+  padding: 0;
+  border-top: 1px solid black;
+}
+
+.listItem {
+  padding: 4px 0;
+  border-bottom: 1px solid black;
+}
+
+.selectable {
+  cursor: pointer;
+}
+
+.selectable:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.selectedListItem {
+  background-color: rgba(32, 128, 213, 0.2);
+}
+
+.selectedListItem:hover {
+  background-color: rgba(32, 128, 213, 0.3);
+}
+
+.noItems {
+  text-align: center;
+  margin: 16px 0;
+}
