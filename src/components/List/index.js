@@ -13,8 +13,8 @@ export default function List({
 }) {
   return (
     <div className={style.container}>
-      <h3>{title}</h3>
-      {items.length ? (
+      {title && <h3>{title}</h3>}
+      {items?.length ? (
         <ul className={style.list}>
           {items.map((item) => {
             const isSelected = selectedRow && selectedRow.id === item.id;
@@ -35,7 +35,7 @@ export default function List({
           })}
         </ul>
       ) : (
-        <div className={style.noItems}>{noItemsMessage}</div>
+        <div className={style.noItems}>{noItemsMessage || 'No items'}</div>
       )}
     </div>
   );
